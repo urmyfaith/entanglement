@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="5037" systemVersion="13A603" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="5037"/>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="11201"/>
     </dependencies>
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="ETGOSXMainViewController">
@@ -12,34 +13,29 @@
             </connections>
         </customObject>
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
-        <customObject id="-3" userLabel="Application"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <customView id="Hz6-mo-xeY">
             <rect key="frame" x="0.0" y="0.0" width="438" height="68"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
             <subviews>
-                <popUpButton verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MNY-fg-SH9">
-                    <rect key="frame" x="246" y="32" width="175" height="26"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="FtZ-8U-Xdd">
-                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
-                        <menu key="menu" title="OtherViews" id="ZqA-Wq-fkM"/>
-                    </popUpButtonCell>
-                </popUpButton>
-                <button verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oFL-1Z-aiS">
-                    <rect key="frame" x="156" y="28" width="79" height="32"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oFL-1Z-aiS">
+                    <rect key="frame" x="161" y="13" width="79" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="67" id="Xbq-x1-ppo"/>
+                    </constraints>
                     <buttonCell key="cell" type="push" title="Mirror" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="dyQ-9Q-VWQ">
                         <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                         <font key="font" metaFont="system"/>
                     </buttonCell>
                 </button>
-                <popUpButton verticalHuggingPriority="750" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IYK-GH-bFC">
-                    <rect key="frame" x="18" y="32" width="125" height="26"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="IYK-GH-bFC">
+                    <rect key="frame" x="18" y="17" width="125" height="26"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="6BC-en-apL"/>
+                    </constraints>
                     <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="fnV-1y-O2U">
                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                        <font key="font" metaFont="system"/>
+                        <font key="font" metaFont="menu"/>
                         <menu key="menu" title="OtherViews" id="zD7-WS-sbG">
                             <items>
                                 <menuItem title="Screen" id="GVe-PW-vJO"/>
@@ -48,21 +44,34 @@
                         </menu>
                     </popUpButtonCell>
                 </popUpButton>
-                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bPg-Sv-exe">
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="bPg-Sv-exe">
                     <rect key="frame" x="25" y="13" width="395" height="14"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" id="MqW-6f-9Is">
                         <font key="font" metaFont="smallSystem"/>
                         <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                     </textFieldCell>
                 </textField>
+                <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MNY-fg-SH9">
+                    <rect key="frame" x="246" y="16" width="175" height="26"/>
+                    <popUpButtonCell key="cell" type="push" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" id="FtZ-8U-Xdd">
+                        <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="menu"/>
+                        <menu key="menu" title="OtherViews" id="ZqA-Wq-fkM"/>
+                    </popUpButtonCell>
+                </popUpButton>
             </subviews>
             <constraints>
-                <constraint firstItem="MNY-fg-SH9" firstAttribute="leading" secondItem="oFL-1Z-aiS" secondAttribute="trailing" constant="15" id="AA7-Ve-ICs"/>
-                <constraint firstItem="oFL-1Z-aiS" firstAttribute="leading" secondItem="IYK-GH-bFC" secondAttribute="trailing" constant="20" id="Mcc-e5-6p7"/>
-                <constraint firstItem="IYK-GH-bFC" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" id="kn5-Lb-kq3"/>
-                <constraint firstAttribute="trailing" secondItem="MNY-fg-SH9" secondAttribute="trailing" constant="20" id="x2P-02-UxQ"/>
+                <constraint firstAttribute="bottom" secondItem="IYK-GH-bFC" secondAttribute="bottom" constant="20" symbolic="YES" id="38d-Fz-vsd"/>
+                <constraint firstItem="MNY-fg-SH9" firstAttribute="trailing" secondItem="bPg-Sv-exe" secondAttribute="trailing" id="6zM-ca-DVh"/>
+                <constraint firstItem="bPg-Sv-exe" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="27" id="AQU-ZL-uNe"/>
+                <constraint firstItem="IYK-GH-bFC" firstAttribute="top" secondItem="oFL-1Z-aiS" secondAttribute="top" id="Da9-mb-a8D"/>
+                <constraint firstAttribute="trailing" secondItem="MNY-fg-SH9" secondAttribute="trailing" constant="20" symbolic="YES" id="DiR-hp-0xo"/>
+                <constraint firstItem="oFL-1Z-aiS" firstAttribute="leading" secondItem="IYK-GH-bFC" secondAttribute="trailing" constant="27" id="OEu-Vg-tvn"/>
+                <constraint firstItem="MNY-fg-SH9" firstAttribute="leading" secondItem="oFL-1Z-aiS" secondAttribute="trailing" constant="14" id="Oon-G6-Sd7"/>
+                <constraint firstItem="bPg-Sv-exe" firstAttribute="top" secondItem="Hz6-mo-xeY" secondAttribute="top" constant="41" id="Yna-XY-Hnj"/>
+                <constraint firstItem="IYK-GH-bFC" firstAttribute="leading" secondItem="Hz6-mo-xeY" secondAttribute="leading" constant="20" symbolic="YES" id="fkq-Vh-s3S"/>
+                <constraint firstItem="oFL-1Z-aiS" firstAttribute="baseline" secondItem="MNY-fg-SH9" secondAttribute="baseline" id="jZq-bf-fHJ"/>
             </constraints>
         </customView>
     </objects>

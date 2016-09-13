@@ -69,15 +69,18 @@
 }
 
 - (void)client:(ETGClient *)client deviceDidDisconnect:(ETGDevice *)device {
-  _connectedDeviceCount--;
-  NSString *deviceName = _deviceInfos[@([device deviceID])][@"name"];
-  [_deviceListMenu removeItemWithTitle:deviceName];
-  [_deviceInfos removeObjectForKey:@([device deviceID])];
+    _connectedDeviceCount--;
+    NSString *deviceName = _deviceInfos[@([device deviceID])][@"name"];
+    if (deviceName) {
+        [_deviceListMenu removeItemWithTitle:deviceName];
+    }
 
-  if (_connectedDeviceCount < 1) {
-    _statusField.stringValue = @"Disconnected";
-    [self stopScreeshotting];
-  }
+    [_deviceInfos removeObjectForKey:@([device deviceID])];
+
+    if (_connectedDeviceCount < 1) {
+        _statusField.stringValue = @"Disconnected";
+        [self stopScreeshotting];
+    }
 }
 
 #pragma mark - Screenshotting

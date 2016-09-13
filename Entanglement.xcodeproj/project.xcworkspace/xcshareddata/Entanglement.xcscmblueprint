@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "A41D30E1CD3110F246704EEC7C1826EAB487B2B1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "A41D30E1CD3110F246704EEC7C1826EAB487B2B1" : 9223372036854775807,
+    "03CC76BA023563ABC79A0D638133C8034836B3F7" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "88552803-652B-4134-8729-C8360040BDB7",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "A41D30E1CD3110F246704EEC7C1826EAB487B2B1" : "entanglement\/",
+    "03CC76BA023563ABC79A0D638133C8034836B3F7" : "entanglement\/peertalk\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Entanglement",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Entanglement.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/liquidx\/peertalk.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "03CC76BA023563ABC79A0D638133C8034836B3F7"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/urmyfaith\/entanglement.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "A41D30E1CD3110F246704EEC7C1826EAB487B2B1"
+    }
+  ]
+}
